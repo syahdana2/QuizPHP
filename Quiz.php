@@ -58,17 +58,20 @@ $matrix2 = array(
 <?php
 echo "<hr> Soal 2 :<br>";
 
-// Jumlah Baris
+// Jumlah baris yang akan dicetak dalam pola
 $n = 5;
 
+// loop pertama untuk mengontrol baris-baris
 for ($i = 1; $i <= $n; $i++) {
     // Loop untuk mencetak spasi di sebelah kiri
     for ($j = $n; $j > $i; $j--) {
-        echo "&nbsp;&nbsp;&nbsp;";
+        // spasi untuk mengatur jarak
+        echo "&nbsp;&nbsp;&nbsp;"; 
     }
 
     // Loop untuk mencetak angka dari $i hingga 1
     for ($k = $i; $k >= 1; $k--) {
+        // mencetak angka dan spasi
         echo $k . " ";
     }
 
